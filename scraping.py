@@ -22,7 +22,7 @@ def initialize():
     driver.get("https://servizi.fip.it/fol/html/common/login.html")
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.NAME, 'userName')))
     driver.find_element_by_name("userName").send_keys('m.vita_desa_crma')
-    driver.find_element_by_name("password").send_keys('Marco40954')
+    driver.find_element_by_name("password").send_keys('')
 
     driver.find_element_by_class_name("GGBLLEADBU").click()
     WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, 'gwt-uid-10')))
